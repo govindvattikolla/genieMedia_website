@@ -8,7 +8,7 @@ import output from '../assets/podcast/podcast-output.JPG'
 import light2 from '../assets/podcast/studio-light2-min.JPG'
 import set2 from '../assets/podcast/studio-set2-min.JPG'
 import setMIn from '../assets/podcast/studioSet-min.JPG'
-import studioNyt from '../assets/podcast/studioNightView-min.JPG'
+import studioNyt from '../assets/podcast/StudioNightView-min.JPG'
 
 
 

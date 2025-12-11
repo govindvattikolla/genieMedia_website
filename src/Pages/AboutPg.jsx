@@ -1,0 +1,297 @@
+import React from 'react';
+import { Check } from 'lucide-react';
+// import aboutImg from '../assets/genieAboutImg.jpg'
+import { useEffect, useRef, useState } from "react";
+import ourvission from "../assets/our-vision2.jpg"
+import AboutSection1 from '../components/AboutSection';
+import VideoTestimonials from '../components/testimonials';
+
+// import ourvission2 from "../assets/our-vision.jpg"
+
+export default function AboutPage() {
+  const benefits = [
+    'reducing risk',
+    'controlling expenses',
+    'increasing compliance',
+    'attracting top personnel',
+    'retaining loyal consumers',
+    'other essential tasks'
+  ];
+
+  const values = [
+    {
+      letter: 'G',
+      title: 'Growth-Driven',
+      description: 'Every action we take is aligned with scaling your success.'
+    },
+    {
+      letter: 'E',
+      title: 'Excellence First',
+      description: 'We don\'t settle for good - we deliver exceptional.'
+    },
+    {
+      letter: 'N',
+      title: 'Next-Gen Thinking',
+      description: 'Modern solutions built for tomorrow\'s digital world.'
+    },
+    {
+      letter: 'I',
+      title: 'Integrity Always',
+      description: 'Transparent, ethical, and client-first in every decision.'
+    },
+    {
+      letter: 'E',
+      title: 'Exceptional Execution',
+      description: 'Ideas realized with impact, accuracy, and speed.'
+    }
+  ];
+
+  const sectionRef = useRef(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) setVisible(true);
+      },
+      { threshold: 0.2 }
+    );
+
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <>
+    <div className="relative">
+    
+      <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 px-4 sm:px-6 lg:px-16 pt-48 mt-12 sm:pt-24 pb-32 sm:pb-32 lg:pb-48">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          
+            <div className="text-white space-y-6">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight">
+                About Us
+              </h1>
+              <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-xl">
+                We are digital transformation firm that provides cutting-edge solutions to a number of companies and technology startups.
+              </p>
+            </div>
+
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative">
+                <div className="absolute inset-0 bg-cyan-400 opacity-20 blur-3xl rounded-full"></div>
+                <img 
+                  src="https://www.varundigitalmedia.com/static/assets/imgs/services/digital-marketing-hub-page/Digital-Marketing.webp"
+                  alt="Robot hand" 
+                  className="relative rounded-2xl shadow-2xl w-full max-w-lg lg:max-w-2xl object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+      {/* We Assist Businesses Section - White Card Overlapping */}
+      <div className="px-4 sm:px-6 lg:px-16 pb-16 bg-gray-50 sm:-mt-20">
+        <div className="max-w-7xl mx-auto">
+          <div className="bg-white rounded-3xl shadow-2xl p-8 sm:p-12 lg:p-16  sm: lg: relative z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+             
+              <div className="lg:col-span-5">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
+                  We Assist Businesses In
+                </h2>
+              </div>
+
+              {/* Benefits Grid */}
+              <div className="lg:col-span-7">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-5">
+                  {benefits.map((benefit, index) => (
+                    <div
+                      key={index}
+                      className="flex items-start space-x-3"
+                    >
+                      <div className="flex-shrink-0 mt-1">
+                        <div className="w-5 h-5 rounded-full border-2 border-orange-600 mt-px flex items-center justify-center">
+                          <Check className="w-3 h-3 text-orange-600" strokeWidth={3} />
+                        </div>
+                      </div>
+                      <span className="text-base sm:text-xl text-gray-600 hover:text-orange-600  leading-relaxed">
+                        {benefit}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <section
+      ref={sectionRef}
+      className=" w-full 
+    bg-gray-200 max-w-8xl
+    px-6 sm:px-22 pt-60 -mt-60 md:px-6 py-24 
+    flex flex-col md:flex-row gap:20
+    items-center justify-center "
+    >
+     
+      <div
+        className={`w-full md:w-1/2 transition-all duration-[1000ms] ease-out 
+        `}
+      >
+        <img
+          src={ourvission}
+          alt="AIFA services diagram"
+          className="w-{350px} h-auto rounded-2xl"
+        />
+      </div>
+
+     
+      <div
+        className={`w-full md:w-2/5 transition-all duration-[800ms] delay-100 ease-out 
+       `}
+      >
+        <h2 className="text-4xl md:text-5xl font-bold text-orange-600 mb-6">
+        Our Vision
+        </h2>
+
+        <p className="text-gray-700 text-lg leading-relaxed mb-6">
+          Our AIFA Labs combines process, data, technology, and industry
+          experience to deliver a spectrum of digital transformation services.
+        </p>
+
+        <p className="text-gray-700 text-lg leading-relaxed">
+          It is time to learn more about the digital business transformation
+          services we provide such as <span className="text-orange-600 font-medium">AI</span>,{" "}
+          <span className="text-orange-600 font-medium">NLP</span>,{" "}
+          <span className="text-orange-600 font-medium">MLOps</span>,{" "}
+          <span className="text-orange-600 font-medium">Chatbot</span>,{" "}
+          <span className="text-orange-600 font-medium">SAP</span> and{" "}
+          <span className="text-orange-600 font-medium">Computer Vision</span>{" "}
+          services.
+        </p>
+      </div>
+    </section>
+
+   {/* our mission */}
+   <section
+      ref={sectionRef}
+      className=" w-full 
+    bg-gray-50 max-w-8xl
+    px-6 sm:px-22 pt-12  md:px-6 py-24 
+    flex flex-col md:flex-row-reverse gap-20
+    items-center justify-center "
+    >
+     
+      <div
+        className={`w-full md:w-1/2 transition-all duration-[1000ms] ease-out 
+        ${visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
+      >
+        <img
+          src={ourvission}
+          alt="AIFA services diagram"
+          className="w-{350px} h-auto rounded-2xl"
+        />
+      </div>
+
+     
+      <div
+        className={`w-full md:w-1/2 transition-all duration-[800ms] delay-100 ease-out ml-0 md:ml-20
+        ${visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`}
+      >
+        <h2 className="text-4xl md:text-5xl font-bold text-orange-600 mb-6">
+          Our Mission
+        </h2>
+
+        <p className="text-gray-700 text-lg leading-relaxed mb-6">
+          Our AIFA Labs combines process, data, technology, and industry
+          experience to deliver a spectrum of digital transformation services.
+        </p>
+
+        <p className="text-gray-700 text-lg leading-relaxed">
+          It is time to learn more about the digital business transformation
+          services we provide such as <span className="text-orange-600 font-medium">AI</span>,{" "}
+          <span className="text-orange-600 font-medium">NLP</span>,{" "}
+          <span className="text-orange-600 font-medium">MLOps</span>,{" "}
+          <span className="text-orange-600 font-medium">Chatbot</span>,{" "}
+          <span className="text-orange-600 font-medium">SAP</span> and{" "}
+          <span className="text-orange-600 font-medium">Computer Vision</span>{" "}
+          services.
+        </p>
+      </div>
+    </section>
+
+    <AboutSection1/>
+
+    <div className="relative bg-gray-200 px-4 sm:px-6 lg:px-16 py-16 sm:py-20 lg:py-14 overflow-hidden">
+     
+      
+      <div className="max-w-7xl mx-auto relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+          {/* Left Section - Core Values Header */}
+          <div className="text-black space-y-8 sm:mt-40">
+            <div className="space-y-6">
+              <h2 className=" text-4xl sm:text-5xl lg:text-6xl font-bold">
+                Core Values
+              </h2>
+              <p className=" text-lg sm:text-xl leading-relaxed opacity-95">
+                Our core values drive us to build user-focused software through collaboration, transparency, empathy, and technical excellence.
+              </p>
+            </div>
+
+            {/* GENIE Large Text */}
+            <div className="mt-12 lg:mt-20">
+              <h3 className=" text-orange-600 text-6xl t sm:text-7xl lg:text-8xl  font-bold tracking-widest">
+                GENIE
+              </h3>
+            </div>
+
+           
+          </div>
+
+          {/* Right Section - Values List with Letters */}
+          <div className="space-y-0 relative">
+            {/* Vertical line connecting letters */}
+            <div className="absolute left-6 top-8 bottom-8 w-0.5 bg-black opacity-20 hidden sm:block"></div>
+
+            {values.map((value, index) => (
+              <div 
+                key={index} 
+                className="relative flex items-start gap-6 sm:gap-8 pb-8 last:pb-0"
+              >
+                {/* Letter Circle */}
+                <div className="flex-shrink-0 relative mt-4 z-10">
+                  <div className="w-12 h-24 sm:w-14 sm:h-14 rounded-full bg-orange-400 flex items-center justify-center shadow-lg">
+                    <span className="text-2xl sm:text-3xl font-bold text-white">
+                      {value.letter}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="flex-1 rounded-lg bg-white p-6 space-y-2">
+                  <h4 className="text-xl sm:text-2xl font-bold text-black">
+                    {value.title}
+                  </h4>
+                  <p className="text-base sm:text-lg text-black opacity-90 leading-relaxed">
+                    {value.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <VideoTestimonials/>
+      </>
+  );
+}

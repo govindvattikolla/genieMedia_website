@@ -1,0 +1,126 @@
+import React, { useState, useEffect } from 'react';
+
+
+import meerabasu from "../assets/meerabasuWebsite.png"
+import avattagems from "../assets/AvanttaGems.png"
+import kns from "../assets/knsMetals.png"
+import laserfold from "../assets/LaserFold.png"
+import studio from "../assets/GenieStudio.png"
+import buildzone from "../assets/buildzon.png"
+
+
+const ProjectsSection = () => {
+ 
+
+
+const projects = [
+  {
+    name: "Meera Basu",
+    image:
+      meerabasu,
+      url: "https://meerabasu.co.in/"
+  },
+  {
+    name: "Avantta Gems",
+    image:
+      avattagems,
+      url: "https://8z2bgt-68.myshopify.com/"
+  },
+  {
+    name: "KNS Metal Solutions",
+    image:
+      kns,
+      url: "https://knsmetalsolutions.com.au/"
+  },
+  {
+    name: "Laserfold",
+    image:
+      laserfold,
+      url: "https://laserfold.com.au/"
+  },
+  {
+    name: "GenieStudio",
+    image:
+      studio,
+      url: "https://geniestudio.in/"
+  },
+  {
+    name: "Buildzone",
+    image:
+      buildzone,
+      url: "https://www.buildzonprojects.com/"
+  }
+];
+
+
+
+  return (
+    <>
+     
+ 
+
+     <section className="bg-white py-8 md:py-12" id='projects'>
+      <div className="max-w-7xl mx-auto px-2">
+
+       
+        <h2 className="text-center text-4xl md:text-5xl font-bold text-gray-700 mb-10">
+          Our Portfolio
+        </h2>
+
+        {/* Projects Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
+
+          {projects.map((project, index) => (
+            <div key={index} className="text-center group">
+
+             
+              <div className="bg-orange-400   rounded-3xl p-0 md:p-0.5  mb-8 transition-transform duration-300 group-hover:scale-105">
+                <div className="overflow-hidden rounded-2xl">
+                  <img
+                    src={project.image}
+                    alt={project.name}
+                    className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110 boder-2 border-orange-500"
+                  />
+                </div>
+              </div>
+
+              {/* Title */}
+              <h3 className="text-xl font-semibold mb-6">
+                {project.name}
+              </h3>
+
+             
+              <button className="
+                px-8 py-3 
+                rounded-full 
+                font-semibold 
+                border-2 border-orange-400
+                text-white 
+                bg-gray-900
+                hover:bg-orange-400
+                hover:text-black
+                transition-all duration-300
+              " onClick={()=> window.open(project.url, "_blank")}>
+                VIEW PROJECT
+              </button>
+
+            </div>
+            
+          ))}
+        </div>
+        
+     
+     
+
+      </div>
+       
+    </section>
+
+    
+
+   
+    </>
+  );
+};
+
+export default ProjectsSection;

@@ -2,18 +2,20 @@ import React from 'react'
 import ProductionHouseServices from '../components/ProductionServices'
 import ContactSec from '../components/contactSection'
 
+import studioWhite from '../assets/podcast/StudioNightView-min.JPG'
+
 export default function ProductionHouse() {
   return (
     <>
-      <div className="bg-gradient-to-br 
+      <div className="text-center bg-gradient-to-br 
         from-slate-900 via-slate-800 to-slate-900 
-        px-4 sm:px-6 lg:px-16 pt-18 mt-12 sm:pt-24 pb-12 sm:pb-12 lg:pb-18">
+        px-4 sm:px-6 lg:px-16 pt-28 mt-12 sm:pt-24 pb-12 sm:pb-12 lg:pb-18">
 
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
             <div className="text-white space-y-6">
-              <h1 className="text-5xl sm:text-6xl lg:text-6xl font-bold tracking-tight">
+              <h1 className="text-4xl sm:text-6xl lg:text-6xl font-bold tracking-tight">
                 Production House
               </h1>
               <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-xl">
@@ -25,7 +27,7 @@ export default function ProductionHouse() {
               <div className="relative">
                 <div className="absolute inset-0 bg-cyan-400 opacity-20 blur-3xl rounded-full"></div>
                 <img 
-                  src="https://images.pexels.com/photos/243757/pexels-photo-243757.jpeg?cs=srgb&dl=pexels-hikaique-243757.jpg&fm=jpg"
+                  src={studioWhite}
                   alt="Robot hand" 
                   className="relative rounded-2xl shadow-2xl w-full max-w-lg lg:max-w-2xl object-cover"
                 />

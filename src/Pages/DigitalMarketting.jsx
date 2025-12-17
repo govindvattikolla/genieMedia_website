@@ -143,15 +143,15 @@ export default function DigitalMarketting() {
   return (
    <>
 
-      <div className="bg-gradient-to-br 
+      <div className=" text-center bg-gradient-to-br 
         from-slate-900 via-slate-800 to-slate-900 
-        px-4 sm:px-6 lg:px-16 pt-18 mt-12 sm:pt-24 pb-12 sm:pb-12 lg:pb-18">
+        px-4 sm:px-6 lg:px-16 pt-24 mt-12 sm:pt-24 pb-12 sm:pb-12 lg:pb-18">
 
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
             <div className="text-white space-y-6">
-              <h1 className="text-5xl sm:text-6xl lg:text-6xl font-bold tracking-tight">
+              <h1 className="text-4xl sm:text-6xl lg:text-6xl font-bold tracking-tight">
                 Digital Marketing
               </h1>
               <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-xl">
@@ -196,7 +196,7 @@ export default function DigitalMarketting() {
                "
              >
            {/* Marketing That Connects, Engages & Converts */}
-           Digital Marketing Services
+           Our Marketing Services
                  
              </h1>
       
@@ -230,7 +230,7 @@ export default function DigitalMarketting() {
 
 
         {/* section3 */}
-<div className="bg-gray-50 py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
+<div className="bg-gray-50 py-8 sm:py-20 lg:py-14 px-4 sm:px-6 lg:px-8">
   <div className="max-w-7xl mx-auto">
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
       

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Video, Wand2, FileText, Camera, Film, Radio, ChevronRight } from 'lucide-react';
 
+
 export default function ProductionHouseServices() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
@@ -15,12 +16,13 @@ export default function ProductionHouseServices() {
     },
     {
       icon: Wand2,
-      title: 'Animation & Motion Graphics',
-      description: 'Add a creative touch with 2D/3D animation and motion graphics. Our team crafts visually stunning animations that explain, entertain, and engage your audience.',
+      title: 'Wedding & Events',
+      description: 'Capture life’s most special moments with professional wedding and event coverage. From candid emotions to grand celebrations, we ensure every detail is beautifully documented.',
       color: 'from-purple-500 to-pink-500',
       bgColor: 'bg-purple-50',
       iconColor: 'text-purple-500'
     },
+    
     {
       icon: FileText,
       title: 'Scriptwriting & Storyboarding',
@@ -69,7 +71,7 @@ export default function ProductionHouseServices() {
               Our Expert-led Services
             </span>
           </div>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black leading-tight max-w-4xl mx-auto">
+          <h2 className="text-2xl sm:text-5xl lg:text-6xl font-bold text-black leading-tight max-w-4xl mx-auto">
             Transforming Concepts into{' '}
             <span className="bg-orange-500 bg-clip-text text-transparent">
               Captivating Productions

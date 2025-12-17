@@ -5,6 +5,7 @@ import video from '../assets/WebsiteVideo_2.mp4'
 import ServicesSection2 from '../components/ServicesWebsites';
 import ProjectsSection from '../components/ProjectsSection';
 import VideoTestimonials from '../components/testimonials';
+import webImg from '../assets/web_services_hero.JPG'
 
 export default function WebDevPg() {
 
@@ -107,13 +108,13 @@ export default function WebDevPg() {
     <>
     <div className="bg-gradient-to-br 
         from-slate-900 via-slate-800 to-slate-900 
-        px-4 sm:px-6 lg:px-16 pt-18 mt-12 sm:pt-24 pb-12 sm:pb-12 lg:pb-18">
+        px-4 sm:px-6 lg:px-16 pt-28 mt-12 sm:pt-24 pb-12 sm:pb-12 lg:pb-18 text-center">
 
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
             <div className="text-white space-y-6">
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight">
+              <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight">
                 Web  Development
               </h1>
               <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-xl">
@@ -125,8 +126,8 @@ export default function WebDevPg() {
               <div className="relative">
                 <div className="absolute inset-0 bg-cyan-400 opacity-20 blur-3xl rounded-full"></div>
                 <img 
-                  src="https://www.simplilearn.com/ice9/free_resources_article_thumb/is_web_development_good_career.jpg"
-                  alt="Robot hand" 
+                  src={webImg}
+                  alt="webdev" 
                   className="relative rounded-2xl shadow-2xl w-full max-w-lg lg:max-w-2xl object-cover"
                 />
               </div>
@@ -205,7 +206,7 @@ export default function WebDevPg() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           {/* Left Column - Content */}
           <div className="lg:sticky lg:top-24">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+            <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               Why Choose Genie Media as Your Marketing Agency?
             </h1>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">

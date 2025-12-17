@@ -5,17 +5,18 @@ import { useEffect, useRef, useState } from "react";
 import ourvission from "../assets/our-vision2.jpg"
 import AboutSection1 from '../components/AboutSection';
 import VideoTestimonials from '../components/testimonials';
+import mission from '../assets/ourMission.jpg'
 
 // import ourvission2 from "../assets/our-vision.jpg"
 
 export default function AboutPage() {
   const benefits = [
-    'reducing risk',
-    'controlling expenses',
-    'increasing compliance',
-    'attracting top personnel',
-    'retaining loyal consumers',
-    'other essential tasks'
+    'Reducing risk',
+    'Controlling expenses',
+    'Increasing compliance',
+    'Attracting top personnel',
+    'Retaining loyal consumers',
+    'Other essential tasks'
   ];
 
   const values = [
@@ -65,11 +66,11 @@ export default function AboutPage() {
     <>
     <div className="relative">
     
-      <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 px-4 sm:px-6 lg:px-16 pt-48 mt-12 sm:pt-24 pb-32 sm:pb-32 lg:pb-48">
+      <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 px-4 sm:px-6 lg:px-16 pt-28 mt-8 sm:pt-24 pb-20 sm:pb-32 lg:pb-36">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
-            <div className="text-white space-y-6">
+            <div className="text-center text-white space-y-6">
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight">
                 About Us
               </h1>
@@ -94,13 +95,13 @@ export default function AboutPage() {
 
     </div>
       {/* We Assist Businesses Section - White Card Overlapping */}
-      <div className="px-4 sm:px-6 lg:px-16 pb-16 bg-gray-50 sm:-mt-20">
+      <div className="px-4 mt-6 sm:px-6 lg:px-16 pb-16 bg-gray-50 sm:-mt-20">
         <div className="max-w-7xl mx-auto">
           <div className="bg-white rounded-3xl shadow-2xl p-8 sm:p-12 lg:p-16  sm: lg: relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
              
               <div className="lg:col-span-5">
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
+                <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
                   We Assist Businesses In
                 </h2>
               </div>
@@ -118,7 +119,7 @@ export default function AboutPage() {
                           <Check className="w-3 h-3 text-orange-600" strokeWidth={3} />
                         </div>
                       </div>
-                      <span className="text-base sm:text-xl text-gray-600 hover:text-orange-600  leading-relaxed">
+                      <span className="text-lg sm:text-xl text-gray-600 hover:text-orange-600  leading-relaxed">
                         {benefit}
                       </span>
                     </div>
@@ -135,26 +136,26 @@ export default function AboutPage() {
     <section
       ref={sectionRef}
       className=" w-full 
-    bg-gray-200 max-w-8xl
-    px-6 sm:px-22 pt-60 -mt-60 md:px-6 py-24 
+    bg-gray-200 max-w-8xl mx-auto
+    px-6 sm:px-22 pt-60 -mt-60 md:px-6 py-8 
     flex flex-col md:flex-row gap:20
     items-center justify-center "
     >
      
       <div
-        className={`w-full md:w-1/2 transition-all duration-[1000ms] ease-out 
+        className={`w-full md:w-1/2 transition-all duration-[1000ms] ease-out sm:ml-14
         `}
       >
         <img
           src={ourvission}
-          alt="AIFA services diagram"
+          alt=" services diagram"
           className="w-{350px} h-auto rounded-2xl"
         />
       </div>
 
      
       <div
-        className={`w-full md:w-2/5 transition-all duration-[800ms] delay-100 ease-out 
+        className={`text-center mt-8 lg:-mt-4 w-full md:w-[70%] transition-all duration-[800ms] delay-100 ease-out sm:mr-14 sm:ml-14 
        `}
       >
         <h2 className="text-4xl md:text-5xl font-bold text-orange-600 mb-6">
@@ -162,19 +163,15 @@ export default function AboutPage() {
         </h2>
 
         <p className="text-gray-700 text-lg leading-relaxed mb-6">
-          Our AIFA Labs combines process, data, technology, and industry
-          experience to deliver a spectrum of digital transformation services.
+         At Genie Media, we empower brands to grow in the digital-first world through strategy, creativity, and performance-driven marketing.
+We blend design, storytelling, and technology to build meaningful brand experiences that attract, and convert audiences across all channels.
+
+
         </p>
 
         <p className="text-gray-700 text-lg leading-relaxed">
-          It is time to learn more about the digital business transformation
-          services we provide such as <span className="text-orange-600 font-medium">AI</span>,{" "}
-          <span className="text-orange-600 font-medium">NLP</span>,{" "}
-          <span className="text-orange-600 font-medium">MLOps</span>,{" "}
-          <span className="text-orange-600 font-medium">Chatbot</span>,{" "}
-          <span className="text-orange-600 font-medium">SAP</span> and{" "}
-          <span className="text-orange-600 font-medium">Computer Vision</span>{" "}
-          services.
+         Our vision is to become a trusted growth partner for businesses by delivering impactful <span className="text-orange-600 font-medium">digital marketing solutions</span>{" "} that drive measurable results. 
+          
         </p>
       </div>
     </section>
@@ -184,45 +181,40 @@ export default function AboutPage() {
       ref={sectionRef}
       className=" w-full 
     bg-gray-50 max-w-8xl
-    px-6 sm:px-22 pt-12  md:px-6 py-24 
+    px-6 sm:px-22 pt-12  md:px-6 py-14 
     flex flex-col md:flex-row-reverse gap-20
     items-center justify-center "
     >
      
       <div
-        className={`w-full md:w-1/2 transition-all duration-[1000ms] ease-out 
+        className={`w-full md:w-1/2 transition-all duration-[1000ms] ease-out sm:mr-12
         ${visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
       >
         <img
-          src={ourvission}
-          alt="AIFA services diagram"
-          className="w-{350px} h-auto rounded-2xl"
+          src={mission}
+          alt="services diagram"
+          className="w-{350px} h-auto rounded-2xl "
         />
       </div>
 
      
       <div
-        className={`w-full md:w-1/2 transition-all duration-[800ms] delay-100 ease-out ml-0 md:ml-20
+        className={`text-center w-full md:w-1/2 transition-all duration-[800ms] delay-100 ease-out ml-0 md:ml-20
         ${visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`}
       >
-        <h2 className="text-4xl md:text-5xl font-bold text-orange-600 mb-6">
+        <h2 className="-mt-10 text-4xl md:text-5xl font-bold text-orange-600 mb-6">
           Our Mission
         </h2>
 
         <p className="text-gray-700 text-lg leading-relaxed mb-6">
-          Our AIFA Labs combines process, data, technology, and industry
-          experience to deliver a spectrum of digital transformation services.
+          Our mission is to help businesses stand out, scale faster, and succeed online.
+We combine creative thinking, data-driven insights, and cutting-edge marketing tools to craft tailored solutions that maximize visibility, engagement, and ROI.
         </p>
 
         <p className="text-gray-700 text-lg leading-relaxed">
-          It is time to learn more about the digital business transformation
-          services we provide such as <span className="text-orange-600 font-medium">AI</span>,{" "}
-          <span className="text-orange-600 font-medium">NLP</span>,{" "}
-          <span className="text-orange-600 font-medium">MLOps</span>,{" "}
-          <span className="text-orange-600 font-medium">Chatbot</span>,{" "}
-          <span className="text-orange-600 font-medium">SAP</span> and{" "}
-          <span className="text-orange-600 font-medium">Computer Vision</span>{" "}
-          services.
+          Through  <span className="text-orange-600 font-medium">innovation</span>,{" "}
+         <span className="text-orange-600 font-medium">collaboration</span>,{" "} and
+         <span className="text-orange-600 font-medium">continuous optimization</span>{" "}we turn ideas into powerful digital experiences that fuel long-term growth.
         </p>
       </div>
     </section>

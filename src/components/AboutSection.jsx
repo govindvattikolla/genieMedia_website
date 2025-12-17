@@ -8,7 +8,7 @@ const AboutSection1 = () => {
 
   const stats = [
     { 
-      value: 10, 
+      value: 7, 
       suffix: '+',
       label: 'Years of Expertise',
       color: 'bg-[#CFAF03]',
@@ -18,7 +18,7 @@ const AboutSection1 = () => {
       delay: 0
     },
     { 
-      value: 20, 
+      value: 3, 
       suffix: '+',
       label: 'Countries Served',
       color: 'bg-[#03C2C2]',
@@ -30,7 +30,7 @@ const AboutSection1 = () => {
     { 
       value: 150, 
       suffix: '+',
-      label: 'Tech Experts On-board',
+      label: 'Growth Campaigns ',
       color: 'bg-[#CFAF03]',
       maxHeight: 192, // h-48 in pixels
       height: 'h-38',
@@ -38,9 +38,9 @@ const AboutSection1 = () => {
       delay: 150
     },
     { 
-      value: 600, 
+      value: 400, 
       suffix: '+',
-      label: 'Happy Clients',
+      label: 'Digital Transformations',
       color: 'bg-[#03C2C2]',
       maxHeight: 240, // h-60 in pixels
       height: 'h-60',
@@ -48,7 +48,7 @@ const AboutSection1 = () => {
       delay: 250
     },
     { 
-      value: 1000, 
+      value: 800, 
       suffix: '+',
       label: 'Projects Delivered',
       color: 'bg-[#CFAF03]',

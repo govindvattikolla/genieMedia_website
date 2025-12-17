@@ -26,7 +26,7 @@ const HomePage = () => {
   }, []);
 
   const stats = [
-    { icon: Users, value: '600+', label: 'Happy Clients' },
+    { icon: Users, value: '300+', label: 'Happy Clients' },
     { icon: Award, value: '98%', label: 'Success Rate' },
     { icon: TrendingUp, value: '250%', label: 'ROI Average' }
   ];
@@ -247,9 +247,9 @@ const projects = [
       <div className="max-w-7xl mx-auto px-6">
 
        
-        <div className="flex items-center gap-3 mb-8">
+        <div className="flex items-center gap-3 mb-8 ">
           <span className="w-8 h-[1px] bg-[#F7F7F7]"></span>
-          <p className="text-orange-600 text-center md:text-left font-medium text-2xl uppercase tracking-wide">
+          <p className="text-orange-600 text-center font-medium text-2xl sm:text-4xl uppercase tracking-wide">
             How It Works
           </p>
         </div>

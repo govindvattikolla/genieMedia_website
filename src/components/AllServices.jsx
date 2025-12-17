@@ -1,19 +1,21 @@
 import React, { useState } from 'react';
 import { ArrowUpRight } from 'lucide-react';
+import production from '../assets/Production_house.JPG';
+import lamp from '../assets/lamp.jpg'
 
 export default function TabbedServices() {
-  const [activeTab, setActiveTab] = useState('data-ai');
+  const [activeTab, setActiveTab] = useState('dm');
 
   const tabs = [
-    { id: 'data-ai', label: 'Digital Marketing' },
-    { id: 'cloud', label: 'Web Development' },
-    { id: 'software', label: 'Production House' },
-    { id: 'app-dev', label: 'Podcast Studio Rentals' },
+    { id: 'dm', label: 'Digital Marketing' },
+    { id: 'webdev', label: 'Web Development' },
+    { id: 'production', label: 'Production House' },
+    { id: 'podcast', label: 'Podcast Studio Rentals' },
     
   ];
 
   const tabContent = {
-    'data-ai': {
+    'dm': {
       mainTitle: 'Digital Marketing Services',
       mainDescription: 'We craft digital marketing strategies that are data-driven, targeted, and designed for growth. From brand strategy to content, SEO, social media, and paid campaigns, we build powerful digital experiences that elevate your brand, attract the right audience, and turn prospects into loyal customers.',
       mainImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=700&fit=crop',
@@ -45,7 +47,7 @@ export default function TabbedServices() {
         }
       ]
     },
-    'cloud': {
+    'webdev': {
       mainTitle: 'Web Design & Development',
       mainDescription: 'Transforming Ideas into Powerful Web Experiences. We build user-friendly and interactive websites using WordPress, Coding, and Shopify that match your brand’s style and goals.',
       mainImage: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=700&fit=crop',
@@ -77,10 +79,10 @@ export default function TabbedServices() {
             ]
 
     },
-    'software': {
+    'production': {
       mainTitle: 'Production House',
       mainDescription: 'Transforming Concepts into Captivating Productions. We handle all kinds of shoots, events, corporate videos, model shoots, & product photography & make sure every moment is captured neatly & on time.',
-      mainImage: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=700&fit=crop',
+      mainImage: lamp,
       
          services : [
                   {
@@ -88,8 +90,8 @@ export default function TabbedServices() {
                     description: 'Bring your ideas to life with high-quality video content. From concept to final edit, we create engaging videos for commercials, corporate use, social media, and more.'
                   },
                   {
-                    title: 'Animation & Motion Graphics',
-                    description: 'Add a creative touch with 2D/3D animation and motion graphics. Our team crafts visually stunning animations that explain, entertain, and engage your audience.'
+                    title: 'Wedding & Events',
+                    description: 'Capture life’s most special moments with professional wedding and event coverage. From candid emotions to grand celebrations, we ensure every detail is beautifully documented.'
                   },
                   {
                     title: 'Scriptwriting & Storyboarding',
@@ -110,10 +112,10 @@ export default function TabbedServices() {
                 ]
 
     },
-    'app-dev': {
+    'podcast': {
       mainTitle: 'Podcast Studio Rentals',
       mainDescription: 'Where Great Conversations Come to Life Record your podcast in our studio, which is ready for use. Everything you need is already set up, so you can walk in & start recording right away.',
-      mainImage: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=700&fit=crop',
+      mainImage: production,
      services : [
                   {
                     title: 'High-Quality Cameras',

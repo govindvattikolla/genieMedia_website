@@ -24,7 +24,7 @@ export default function Reviews() {
    <>
     <div className="bg-gradient-to-br 
         from-slate-900 via-slate-800 to-slate-900 
-        px-4 sm:px-6 lg:px-16 pt-18 mt-12 sm:pt-24 pb-12 sm:pb-12 lg:pb-18">
+        px-4 sm:px-6 lg:px-16 pt-24 mt-12 sm:pt-24 pb-12 sm:pb-12 lg:pb-18">
 
         <div className="max-w-4xl mx-auto">
          

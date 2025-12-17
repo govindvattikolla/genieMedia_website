@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowUpRight } from 'lucide-react';
 import production from '../assets/Production_house.JPG';
-import lamp from '../assets/lamp.jpg'
+import lamp from '../assets/lamp.JPG'
 
 export default function TabbedServices() {
   const [activeTab, setActiveTab] = useState('dm');
